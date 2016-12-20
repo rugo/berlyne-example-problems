@@ -1,0 +1,14 @@
+{% extends "base.phtml" %}
+{% block content %} 
+{{ msg|raw }}
+{% if show_form %} 
+<div> - </div>
+<form method="POST" >
+<div>Are you human, lemurian or aldebaran?</div>
+<div>Captcha:</div>
+<img src="captcha.php" alt="captcha" /><br />
+<input type="text" name="captcha" /><br />
+<input type="submit" value="Get 300 free Ogrone Coins" />
+</form>
+{% endif %} 
+{% endblock %}

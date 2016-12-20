@@ -1,0 +1,20 @@
+{
+ "points": 150,
+ "ports": [
+  {
+   "desc": "Python",
+   "host": 0,
+   "guest": 6666
+  }
+ ],
+ "category": "Crypto/RSA",
+ "tags": [
+  "python",
+  "exploiting"
+ ],
+ "downloads": {
+     "rsa": "adleman.py"
+ },
+ "name": "Rivest Shamir and Adleman",
+ "desc": "RSA is great.<br><pre>nc {HOST} {PORT_6666}</pre><br><small>(using unix or cygwin)</small><br><a href='{DL_rsa}'>Download Source</a>"
+}

@@ -1,0 +1,10 @@
+{
+    "category": "Web",
+ "desc": "There is <a href='http://{HOST}:{PORT_80}/'>this</a> shitty site about shitty music. <br>Get me access to the admin panel. I'll reward you with points.",
+ "ports": [{"guest": 80,
+ "desc": "Website",
+ "host": 0}],
+ "points": 100,
+ "tags": ["web", "PHP", "remote file inc", "robots.txt"],
+ "name": "Sounds"
+}

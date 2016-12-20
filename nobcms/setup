@@ -1,0 +1,21 @@
+#!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+CONTENT_DIR=/opt
+
+apt-get install -y libapache2-mod-php5 php5-mysql mysql-server apache2
+
+shopt -s dotglob # because of .htaccess
+rm -r /var/www/html/*
+rm /etc/apache2/sites-enabled/*
+
+mv $CONTENT_DIR/nobcms_apache.conf /etc/apache2/sites-enabled/
+mv $CONTENT_DIR/nodcms/* /var/www/html
+chown www-data: /var/www/html/nodcms/language/ -R
+
+a2enmod rewrite
+
+service apache2 restart
+service mysql restart
+
+mysql < $CONTENT_DIR/*.sql

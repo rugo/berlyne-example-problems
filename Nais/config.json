@@ -1,0 +1,19 @@
+{
+ "points": 200,
+ "ports": [
+  {
+   "desc": "Nais",
+   "host": 0,
+   "guest": 6666
+  }
+ ],
+ "category": "Exploit",
+ "tags": [
+  "reversing",
+  "buffer overflow",
+  "exploiting"
+ ],
+ "downloads": {"binary": "nais", "source": "dl_only/nais.c"},
+ "name": "Nais Program",
+ "desc": "<a href='{DL_binary}'>This</a> seems like a very useful tool for downloading flags...<br>Connect to the TCP service: <br><pre>nc {HOST} {PORT_6666}</pre><br><small>(using unix or cygwin)</small><a href='{DL_source}'>Download Source</a>"
+}

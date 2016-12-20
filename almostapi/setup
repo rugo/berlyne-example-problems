@@ -1,0 +1,20 @@
+#!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+CONTENT_DIR=/opt
+
+apt-get install -y libapache2-mod-php5 php5-mysql mysql-server apache2
+
+mv $CONTENT_DIR/mysqld_load_file.cnf /etc/mysql/conf.d/mysqld_load_file.cnf
+mv $CONTENT_DIR/webapp/ /var/www/
+mkdir -p /opt/apache2/access
+mv $CONTENT_DIR/htpasswd /opt/apache2/access
+
+# Apache
+rm /etc/apache2/sites-enabled/*
+mv $CONTENT_DIR/almostapi.conf /etc/apache2/sites-enabled
+
+service apache2 restart
+service mysql restart
+
+mysql < $CONTENT_DIR/*.sql

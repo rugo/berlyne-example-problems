@@ -1,0 +1,23 @@
+{% extends "base.phtml" %}
+{% block content %} 
+<div class="products">
+<center>
+<table>
+<tr>
+<th></th>
+<th>Name</th>
+<th>Price</th>
+<th>Seller</th>
+</tr>
+{% for product in products %}
+    <tr>
+        <td><img src="{{ product.img }}" /></td>
+        <td><a href="product.php?id={{ product.id }}">{{ product.name }}</a></td>
+        <td>{{ product.price }} OC </td>
+        <td>{{ product.seller }}</td>
+    </tr>
+{% endfor %}
+</table>
+</center>
+</div>
+{% endblock %}

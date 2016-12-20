@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+CONTENT_DIR=/opt
+
+useradd nais -s /bin/false
+
+apt-get install -y xinetd
+
+chmod +x $CONTENT_DIR/nais
+mv $CONTENT_DIR/xinetd/nais /etc/xinetd.d
+
+service xinetd restart

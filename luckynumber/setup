@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+CONTENT_DIR=/opt
+
+useradd luckynumber -s /bin/false
+
+apt-get install -y python xinetd
+
+mv $CONTENT_DIR/xinetd/luckynumber /etc/xinetd.d
+chmod +x /opt/main.py
+
+service xinetd restart

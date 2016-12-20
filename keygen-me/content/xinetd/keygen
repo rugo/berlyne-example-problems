@@ -1,0 +1,11 @@
+service keygen
+{
+# Our service is not in /etc/hosts
+    type         = UNLISTED
+    protocol     = tcp
+    socket_type  = stream
+    port         = 6666
+    server       = /opt/keygen 
+    user         = keygen
+    wait         = no
+}

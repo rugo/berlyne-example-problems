@@ -1,0 +1,18 @@
+{
+ "points": 150,
+ "category": "Web",
+ "ports": [
+  {
+   "desc": "Website",
+   "guest": 80,
+   "host": 0
+  }
+ ],
+ "tags": [
+  "web",
+  "rce",
+  "php"
+ ],
+ "desc": "He thinks he is SO cool with his new website. As always. Get me the file /opt/flag.txt from the webserver.<br><a href='http://{HOST}:{PORT_80}/'>To the website</a>",
+ "name": "NobCMS"
+}

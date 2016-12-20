@@ -1,0 +1,20 @@
+{
+ "points": 100,
+ "ports": [
+  {
+   "desc": "Python",
+   "host": 0,
+   "guest": 6666
+  }
+ ],
+ "category": "Exploit",
+ "tags": [
+  "python",
+  "exploiting"
+ ],
+ "downloads": {
+  "main": "main.py"
+ },
+ "name": "Lucky Number",
+ "desc": "<a href='{DL_main}'>This</a> awesome tool tells you its secret once you found a true lucky number. I haven't found one so far...<br>Connect to the TCP service: <br><pre>nc {HOST} {PORT_6666}</pre><br><small>(using unix or cygwin)</small>"
+}

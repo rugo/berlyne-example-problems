@@ -1,0 +1,18 @@
+{
+ "points": 250,
+ "ports": [
+  {
+   "desc": "Keygen",
+   "host": 0,
+   "guest": 6666
+  }
+ ],
+ "category": "Reversing",
+ "tags": [
+  "reversing",
+  "keygen"
+ ],
+ "downloads": {"binary": "keygen"},
+ "name": "Keygen Me",
+ "desc": "Everybody is invited but me! Please, get me a working key...<br>Connect to the TCP service: <br><pre>nc {HOST} {PORT_6666}</pre><br><small>(using unix or cygwin)</small><br><a href='{DL_binary}'>Download binary</a>"
+}

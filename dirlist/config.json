@@ -1,0 +1,11 @@
+{
+    "category": "Web",
+ "desc": "<a href='http://{HOST}:{PORT_80}/cgi-bin/index.pl'>This</a> tool lists dir contents. These newbz have <a href='{DL_index}'>no clue</a> what they're doing..<br>Get me the file <strong>/opt/flag.txt</strong>, will you?",
+ "ports": [{"guest": 80,
+ "desc": "Website",
+ "host": 0}],
+ "points": 100,
+ "downloads": {"index": "cgi/index.pl"},
+ "tags": ["web", "perl", "input sanitization", "remote code execition"],
+ "name": "List Dir"
+}

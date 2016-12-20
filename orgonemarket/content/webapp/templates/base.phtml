@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>The Orgone Market</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+<style type="text/css" title="layout" media="screen">
+@import url("style.css");
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="top">
+    <h1>{{ title }}</h1>
+    <h2>{{ subtitle }} </h2>
+  </div>
+  <div id="header">
+    <ul>
+      <li id="company"> <a href="index.php">HOME</a> </li>
+      <li id="products"> <a href="products.php">PRODUCTS</a> </li>
+      <li id="coins"> <a href="buy_coins.php">ORGONE COINS</a> </li>
+    </ul>
+  </div>
+  <div class="line"> &nbsp; </div>
+  <div id="content">
+    <div id="right">
+{% if user is defined %}
+      <h1>Your Profile</h1>
+      <div class="code"> &nbsp; </div>
+      <h2>Account Name: {{ user.username }}</h2>
+      <h2>Account Balance: {{ user.coins }} OC</h2>
+{% endif %}
+      <h1>News</h1>
+      <div class="code"> &nbsp; </div>
+      <h2 class="ace">Evil Hacker Attack</h2>
+      <h3>JULY,21 2016</h3>
+      <p> Due to a evil hacker attack we have to temporary take down our payment system. Obviously the CIA or the FSB is behind this. Clearly some powerful people don't want us to spread the truth. To make up for it, every active account will get 300 extra coins! Just visit the Orgon Coins site.</p>
+      <h2 class="ace">First Contact</h2>
+      <h3>MAY,21 2015</h3>
+      <p> Today we got a call. A UFO constructor from New Swabia told us to keep up the good work. We also got the info that the high council of Aldebaran is already talking about us. A great day for this website.</p>
+      <h2 class="ace">Launch</h2>
+      <h3>JANUARY,21 2008</h3>
+      <p> The launch of the site was a great success. Not only did we sell 500 secrets in the first two minutes the spirits also have told me that we are on a great mission.</p>
+    </div>
+    <div id="left">
+      <div id="part1">
+        <h1>{{ headline }}</h1>
+        <div class="code"> &nbsp; </div>
+        <center>
+        {% block content %}{% endblock %}
+        </center>
+      </div>
+    </div>
+    <div  class="cleaner"> &nbsp; </div>
+  </div>
+</div>
+<div id="footer" class="cleaner">
+  <p>&copy;Design by <a href="http://gendesigns.blogspot.com">&nbsp;Gendesigns&nbsp;</a></p>
+</div>
+</body>
+</html>

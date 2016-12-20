@@ -1,0 +1,10 @@
+{
+    "category": "Web",
+    "desc": "There is this awesome site. I wan't to buy the secret of life from there. Unfortunately the payment system is down. <br> Can you help me with this? <br> <a href='http://{HOST}:{PORT_80}'>To the site</a>",
+ "ports": [{"guest": 80,
+ "desc": "Website",
+ "host": 0}],
+ "points": 250,
+ "tags": ["web", "race condition", "coding"],
+ "name": "Orgone Market "
+}

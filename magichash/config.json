@@ -1,0 +1,11 @@
+{
+    "category": "Web",
+ "desc": "This new login system doesn't seem to work...<br> <a href='http://{HOST}:{PORT_80}/'>To the site</a><br>Good thing it's <a href='{DL_index}'>open source</a>",
+ "downloads": {"index": "webapp/index.php"},
+ "ports": [{"guest": 80,
+ "desc": "Website",
+ "host": 0}],
+ "points": 150,
+ "tags": ["web", "PHP", "magic hashes"],
+ "name": "Mess of Hash"
+}

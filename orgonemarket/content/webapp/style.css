@@ -1,0 +1,218 @@
+/** Author :Gen.Lostwarrior
+ * Project :Business -II
+ * Date :10 Aug 2008
+ */
+/** With Less Resources try to achieve a lot ***/
+/** Standard Elements **/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+table, th, td {
+        border-spacing: 20px;
+}
+
+h1 {
+    color: #d1d1d1;
+}
+
+h1, h2, h3 {
+    padding-left: 30px;
+}
+
+img {
+    border: none;
+}
+/** Wrapper **/
+#wrapper {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid #7b7b7b;
+}
+
+#top h1 {
+    font-family: arial, verdana;
+    font-weight: 500;
+    font-size: 270%;
+    line-height: 110%;
+}
+
+#top h2 {
+    font-style: italic;
+    padding: 0 0 0 200px;
+    font-size: 1.0em;
+    font-weight: normal;
+}
+/**Top Menu ***/
+#header ul {
+    list-style: none;
+    margin-top: 10px;
+    float: right;
+    margin-right: 5%;
+}
+
+#header ul li {
+    float: left;
+    display: block;
+    height: 40px;
+    margin-left: 10px;
+}
+
+li#company, li#products, li#coins, li#partners, li#contacts {
+    padding: 10px 0 0 40px;
+}
+
+li#company {
+    background: transparent url(images/bb.jpg) no-repeat scroll;
+}
+
+li#products {
+    background: transparent url(images/gb.jpg) no-repeat scroll;
+}
+
+li#coins {
+    background: transparent url(images/lb.jpg) no-repeat scroll;
+}
+
+li#partners {
+    background: transparent url(images/rb.jpg) no-repeat scroll;
+}
+
+li#contacts {
+    background: transparent url(images/vb.jpg) no-repeat scroll;
+}
+
+#header li a {
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: 0.7em;
+}
+
+#header li a:hover {
+    color: #fff;
+}
+/**Content**/
+.line {
+    clear: both;
+    background: url(images/line.gif) repeat-x;
+    margin: 0 5% 0 5%;
+    padding: 0;
+}
+
+#content {
+    margin: 0px 10px 0 10px;
+}
+
+#content h1 {
+    font-size: 1.5em;
+}
+/**Left Part***/
+#left {
+    margin: 0px 310px 0px 0px;
+}
+
+#left img {
+    margin: 0 0 0 30px;
+}
+
+.left {
+    float: left;
+}
+
+#part1 ul {
+    margin: 10px 0 0 270px;
+    list-style-position: inside;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+#part1 li a, #part2 li a {
+    color: #767676;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+#part1 li a:hover, #part2 li a:hover {
+    color: #fff;
+}
+
+#part1 li {
+    background: transparent url(images/arrow.gif) no-repeat scroll left 4px;
+    padding: 2px 4px 0px 28px;
+}
+
+#part2 {
+    margin: 60px 0px 0px 0px;
+}
+
+#nav1 {
+    margin: 0 50px 0 30px;
+}
+
+#part2 ul {
+    list-style-position: inside;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+#left a {
+    background: transparent url(images/arrow.gif) no-repeat scroll left 4px;
+    color: white;
+    padding: 2px 4px 0px 28px;
+}
+/**Right Part***/
+#right {
+    width: 300px;
+    float: right;
+    margin: 0px;
+}
+
+#right p {
+    margin: 0 0 0 30px;
+}
+
+#right h2 {
+    font: 0.8em arial, sans-serif;
+}
+
+#right h3 {
+    font: 8px arial, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ace {
+    margin-top: 20px;
+}
+/**Tags **/
+.code {
+    background: url(images/line.gif) repeat-x;
+    margin-left: 30px;
+}
+
+.cleaner {
+    clear: both;
+}
+/**Footer**/
+#footer {
+    text-align: center;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #fff;
+}
+/**************************/
+/**Common**/
+#footer p, #right p, #left p {
+    color: #767676;
+    font-size: 0.8em;
+}

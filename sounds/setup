@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+CONTENT_DIR=/opt
+
+apt-get install -y libapache2-mod-php5 apache2
+
+rm -r /var/www/html/*
+mv $CONTENT_DIR/webapp/* /var/www/html
+
+service apache2 restart

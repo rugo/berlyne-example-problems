@@ -1,0 +1,22 @@
+#!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+CONTENT_DIR=/opt
+
+apt-get install -y apache2
+
+echo "Nothing to see here" > /var/www/html/index.html
+
+mkdir -p /var/cgi-bin
+mv $CONTENT_DIR/cgi/* /var/cgi-bin
+chmod +x /var/cgi-bin/*.pl
+
+rm /etc/apache2/sites-enabled/*
+mv $CONTENT_DIR/*_apache.conf /etc/apache2/sites-enabled/
+
+mkdir /tmp/achim
+touch /tmp/achim/Nope.txt
+touch /tmp/achim/Collection.zip
+
+a2enmod cgi
+service apache2 restart

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+CONTENT_DIR=/opt
+
+useradd keygen -s /bin/false
+
+apt-get install -y xinetd
+
+chmod +x $CONTENT_DIR/keygen
+mv $CONTENT_DIR/xinetd/keygen /etc/xinetd.d
+
+service xinetd restart

@@ -1,0 +1,10 @@
+{
+    "category": "Web",
+ "desc": "Shouldn't be a problem to get acces to this 'API' for an enlightend h4x0r like you. Right?<br/><a href='http://{HOST}:{PORT_80}'>To the app</a>",
+ "ports": [{"guest": 80,
+ "desc": "Website",
+ "host": 0}],
+ "points": 300,
+ "tags": ["web", "passwords", "cracking", "sqli"],
+ "name": "AlmostApi"
+}

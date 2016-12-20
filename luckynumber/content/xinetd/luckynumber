@@ -1,0 +1,13 @@
+service luckynumber
+{
+# Our service is not in /etc/hosts
+    type         = UNLISTED
+    protocol     = tcp
+    socket_type  = stream
+    port         = 6666
+    server       = /opt/main.py 
+    user         = luckynumber
+    wait         = no
+# HOME var HAS to be set, otherwise python won't start!
+    env = HOME=/ 
+}

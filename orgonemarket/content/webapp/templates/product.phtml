@@ -1,0 +1,16 @@
+{% extends "base.phtml" %}
+{% block content %} 
+<form action="buy.php" method="post">
+<input type="hidden" name="product_id" value="{{ product.id }}" />
+<table>
+    <tr>
+        <td><img src="{{ product.img }}" /></td>
+        <td>Details: {{ product.description }}</td>
+        <td><strong>Price: {{ product.price }} OC </strong></td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center"><input type="button" value="Back" onclick="javascript:history.back()"><input type="submit" value="Buy" /></td>
+    </tr>
+</table>
+</form>
+{% endblock %}
