@@ -5,6 +5,7 @@ CONTENT_DIR=/opt
 
 useradd keygen -s /bin/false
 
+apt-get update
 apt-get install -y xinetd
 
 chmod +x $CONTENT_DIR/keygen

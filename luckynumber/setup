@@ -5,6 +5,7 @@ CONTENT_DIR=/opt
 
 useradd luckynumber -s /bin/false
 
+apt-get update
 apt-get install -y python xinetd
 
 mv $CONTENT_DIR/xinetd/luckynumber /etc/xinetd.d

@@ -5,6 +5,7 @@ CONTENT_DIR=/opt
 
 useradd adle -s /bin/bash
 
+apt-get update
 apt-get install -y python python-crypto 
 
 echo -e 'su - adle -c "python /opt/adleman.py &"\nexit 0' > /etc/rc.local
