@@ -1,7 +1,6 @@
 #!/bin/bash
 
 export DEBIAN_FRONTEND=noninteractive
-CONTENT_DIR=/opt
 
 apt-get update
 apt-get install -y libapache2-mod-php5 php5-mysql mysql-server apache2
