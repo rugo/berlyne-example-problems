@@ -1,0 +1,9 @@
+{
+ "category": "Forensics",
+ "desc": "We got this encrypted zip file. <br>Since only terrorists encrypt we need to decrypt it ASAP! <a href='{DL_zip}'>Download</a><br><small>Flag has the special format FLAGB***</small>",
+ "points": 25,
+ "tags": ["forensics", "cracking", "zip", "collisions"],
+ "name": "DatZip",
+ "downloads": { "zip": "enc.zip" },
+ "flag": "FLAGBHEC^TY_ZP][V\QWRXUS"
+}

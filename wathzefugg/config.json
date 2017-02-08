@@ -1,0 +1,9 @@
+{
+ "category": "Reversing",
+ "desc": "Get me the flag. <a href='{DL_binary}'>Download</a>",
+ "points": 100,
+ "tags": ["reversing"],
+ "name": "wathzefugg",
+ "downloads": { "binary": "wathzefugg" },
+ "flag": "flag{Easy_P3aSyeLpk3NwraTJJmEcvKRUr}"
+}

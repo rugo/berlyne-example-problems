@@ -1,0 +1,9 @@
+{
+ "category": "Forensics",
+ "desc": "<a href='{DL_pic}'>I heard there is a message hidden in this <3</a>",
+ "points": 25,
+ "tags": ["forensics", "PNG"],
+ "name": "Belieber",
+ "downloads": { "pic": "belieber.png" },
+ "flag": "flag{qwertzqwertzqwertz}"
+}

@@ -1,0 +1,3 @@
+CFLAGS=-s
+
+all: wathzefugg
