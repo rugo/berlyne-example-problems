@@ -1,0 +1,19 @@
+#!/bin/bash
+# Make apt non interactive
+export DEBIAN_FRONTEND=noninteractive
+
+# Add user
+useradd snake -s /bin/false
+
+# Install xinetd
+apt-get update
+apt-get install -y xinetd
+
+# Make file executable
+chmod +x $CONTENT_DIR/bin/snake
+
+# Move service config
+mv $CONTENT_DIR/xinetd/snake_service_config /etc/xinetd.d/
+
+# Restart xinetd with new service
+service xinetd restart

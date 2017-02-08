@@ -1,0 +1,10 @@
+service snake
+{
+    type         = UNLISTED
+    protocol     = tcp
+    socket_type  = stream
+    port         = 6666
+    server       = /opt/bin/snake
+    user         = snake
+    wait         = no
+}

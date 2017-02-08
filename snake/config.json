@@ -1,0 +1,11 @@
+{
+ "category": "Exploit",
+ "desc": "<a href='{DL_binary}'>What</a> a nice little game. Wanna play?<br><pre>stty -icanon && nc {HOST} {PORT_6666}</pre>",
+ "ports": [{"guest": 6666,
+ "desc": "Website",
+ "host": 0}],
+ "points": 350,
+ "downloads": { "binary": "bin/snake" },
+ "tags": ["reversing", "ROP", "format string", "binary"],
+ "name": "Snake Game"
+}
