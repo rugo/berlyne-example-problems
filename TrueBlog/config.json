@@ -1,0 +1,10 @@
+{
+    "category": "Web",
+ "desc": "Although they speak the truth, I wan't to have access to the admin panel.<br><a href='http://{HOST}:{PORT_80}/'>To the site</a> ",
+ "ports": [{"guest": 80,
+ "desc": "Website",
+ "host": 0}],
+ "points": 50,
+ "tags": ["web", "encoded credentials"],
+ "name": "The Blog"
+}

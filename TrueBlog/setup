@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+
+apt-get update
+apt-get install -y libapache2-mod-python apache2 python-jinja2
+
+rm /etc/apache2/sites-enabled/*
+mv $CONTENT_DIR/python_apache.conf /etc/apache2/sites-enabled/
+rm -r /var/www/html/*
+mv $CONTENT_DIR/webapp/* /var/www/html
+
+service apache2 restart
