@@ -3,7 +3,7 @@ Example Problems
 
 These are various Berlyne problems. Each of them has a short description in form of a README file.
 
-To use them all, just checkout this repo and put the problems you like into your Berlyne _problems_ folder.
+To use them, just checkout this repo and put the problems you like into your Berlyne _problems_ folder.
 
 To do so, just do this:
 
