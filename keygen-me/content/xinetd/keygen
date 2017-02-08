@@ -5,7 +5,7 @@ service keygen
     protocol     = tcp
     socket_type  = stream
     port         = 6666
-    server       = /opt/keygen 
+    server       = /opt/problem/keygen 
     user         = keygen
     wait         = no
 }

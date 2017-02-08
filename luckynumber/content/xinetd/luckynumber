@@ -5,7 +5,7 @@ service luckynumber
     protocol     = tcp
     socket_type  = stream
     port         = 6666
-    server       = /opt/main.py 
+    server       = /opt/problem/main.py 
     user         = luckynumber
     wait         = no
 # HOME var HAS to be set, otherwise python won't start!

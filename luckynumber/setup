@@ -8,6 +8,6 @@ apt-get update
 apt-get install -y python xinetd
 
 mv $CONTENT_DIR/xinetd/luckynumber /etc/xinetd.d
-chmod +x /opt/main.py
+chmod +x $CONTENT_DIR/main.py
 
 service xinetd restart

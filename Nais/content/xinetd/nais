@@ -5,7 +5,7 @@ service nais
     protocol     = tcp
     socket_type  = stream
     port         = 6666
-    server       = /opt/nais 
+    server       = /opt/problem/nais 
     user         = nais
     wait         = no
 }
