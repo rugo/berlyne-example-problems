@@ -5,5 +5,5 @@
  "tags": ["forensics", "cracking", "zip", "collisions"],
  "name": "DatZip",
  "downloads": { "zip": "enc.zip" },
- "flag": "FLAGBHEC^TY_ZP][V\QWRXUS"
+ "flag": "FLAGBHEC^TY_ZP][V\\QWRXUS"
 }
