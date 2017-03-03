@@ -1,0 +1,12 @@
+{
+ "category": "Forensics",
+ "desc": "This idiot uses the same password for everything. I captured his traffic while he used <a href='{DL_src}'>xfce screenshot</a><br><a href='{DL_pcap}'>Download Network Traffic</a>",
+ "points": 50,
+ "tags": ["pcap", "encoding"],
+ "name": "Shoot Me",
+ "downloads": {
+     "src": "source.zip",
+     "pcap": "screenshooter.pcapng"
+ },
+ "flag": "flag{W3_D0N7_N33D_S3CURITAI_W3_H4VE_ROT13}"
+}
