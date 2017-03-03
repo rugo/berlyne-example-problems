@@ -8,7 +8,7 @@ b=1
 until [ $a -gt ${#secret} ]
 do
 	echo $secret | cut -c$a-`expr $a + 4` | xargs -d '\n' echo -n > $b.txt
- 	7z a $b.zip $b.txt -pTOPupLeQSCn7kbgVtP8GdDY3aZHqZmAuarrCfEj9JpVSECRET!
+    7z a $b.zip $b.txt -p$(head --bytes 30 /dev/urandom|base64)
 	a=`expr $a + 5`
 	b=`expr $b + 1`
 done
