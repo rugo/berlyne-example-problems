@@ -1,0 +1,11 @@
+{
+ "category": "Forensics",
+ "desc": "<a href='{DL_doc}'>This document</a> holds a secret!",
+ "points": 25,
+ "tags": ["docx", "recovery"],
+ "name": "First Word Problems",
+ "downloads": {
+     "doc": "ReSy.docx"
+ },
+ "flag": "flag{wWRpNFadYn4LAW7WTleIRGGeYwh1y8Qw}"
+}
